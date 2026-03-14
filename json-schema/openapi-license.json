@@ -1,0 +1,29 @@
+{
+  "$id": "openapi-license.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "OpenAPI License Object",
+  "description": "License information for the exposed API.",
+  "type": "object",
+  "required": [
+    "name"
+  ],
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "The license name used for the API."
+    },
+    "identifier": {
+      "type": "string",
+      "description": "An SPDX license expression for the API."
+    },
+    "url": {
+      "type": "string",
+      "format": "uri",
+      "description": "A URL to the license used for the API."
+    }
+  },
+  "patternProperties": {
+    "^x-": {}
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,36 @@
+{
+  "$id": "openapi-link.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "OpenAPI Link Object",
+  "description": "Represents a possible design-time link for a response, allowing transitions between operations.",
+  "type": "object",
+  "properties": {
+    "operationRef": {
+      "type": "string",
+      "description": "A relative or absolute URI reference to an OAS operation."
+    },
+    "operationId": {
+      "type": "string",
+      "description": "The name of an existing resolvable OAS operation."
+    },
+    "parameters": {
+      "type": "object",
+      "description": "A map representing parameters to pass to the linked operation.",
+      "additionalProperties": {}
+    },
+    "requestBody": {
+      "description": "A literal value or runtime expression to use as a request body for the linked operation."
+    },
+    "description": {
+      "type": "string",
+      "description": "A description of the link."
+    },
+    "server": {
+      "$ref": "openapi-server.json"
+    }
+  },
+  "patternProperties": {
+    "^x-": {}
+  },
+  "additionalProperties": false
+}

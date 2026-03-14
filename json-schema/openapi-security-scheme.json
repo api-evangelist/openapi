@@ -1,0 +1,60 @@
+{
+  "$id": "openapi-security-scheme.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "OpenAPI Security Scheme Object",
+  "description": "Defines a security scheme that can be used by the operations.",
+  "type": "object",
+  "required": [
+    "type"
+  ],
+  "properties": {
+    "type": {
+      "type": "string",
+      "description": "The type of the security scheme.",
+      "enum": [
+        "apiKey",
+        "http",
+        "mutualTLS",
+        "oauth2",
+        "openIdConnect"
+      ]
+    },
+    "description": {
+      "type": "string",
+      "description": "A description for the security scheme."
+    },
+    "name": {
+      "type": "string",
+      "description": "The name of the header, query, or cookie parameter to be used (required for apiKey)."
+    },
+    "in": {
+      "type": "string",
+      "description": "The location of the API key (required for apiKey).",
+      "enum": [
+        "query",
+        "header",
+        "cookie"
+      ]
+    },
+    "scheme": {
+      "type": "string",
+      "description": "The name of the HTTP Authorization scheme (required for http)."
+    },
+    "bearerFormat": {
+      "type": "string",
+      "description": "A hint to the client to identify how the bearer token is formatted."
+    },
+    "flows": {
+      "$ref": "openapi-oauth-flows.json"
+    },
+    "openIdConnectUrl": {
+      "type": "string",
+      "format": "uri",
+      "description": "OpenId Connect URL to discover OAuth2 configuration values (required for openIdConnect)."
+    }
+  },
+  "patternProperties": {
+    "^x-": {}
+  },
+  "additionalProperties": false
+}

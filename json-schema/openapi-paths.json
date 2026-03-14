@@ -1,0 +1,14 @@
+{
+  "$id": "openapi-paths.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "OpenAPI Paths Object",
+  "description": "Holds the relative paths to the individual endpoints and their operations. The path is appended to the URL from the Server Object to construct the full URL.",
+  "type": "object",
+  "patternProperties": {
+    "^\\/": {
+      "$ref": "openapi-path-item.json"
+    },
+    "^x-": {}
+  },
+  "additionalProperties": false
+}

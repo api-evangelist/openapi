@@ -1,0 +1,44 @@
+{
+  "$id": "openapi-info.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "OpenAPI Info Object",
+  "description": "Metadata about the API described by the OpenAPI document.",
+  "type": "object",
+  "required": [
+    "title",
+    "version"
+  ],
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "The title of the API."
+    },
+    "summary": {
+      "type": "string",
+      "description": "A short summary of the API."
+    },
+    "description": {
+      "type": "string",
+      "description": "A description of the API. CommonMark syntax may be used."
+    },
+    "termsOfService": {
+      "type": "string",
+      "format": "uri",
+      "description": "A URL to the Terms of Service for the API."
+    },
+    "contact": {
+      "$ref": "openapi-contact.json"
+    },
+    "license": {
+      "$ref": "openapi-license.json"
+    },
+    "version": {
+      "type": "string",
+      "description": "The version of the API document."
+    }
+  },
+  "patternProperties": {
+    "^x-": {}
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,25 @@
+{
+  "$id": "openapi-oauth-flows.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "OpenAPI OAuth Flows Object",
+  "description": "Allows configuration of the supported OAuth Flows.",
+  "type": "object",
+  "properties": {
+    "implicit": {
+      "$ref": "openapi-oauth-flow.json"
+    },
+    "password": {
+      "$ref": "openapi-oauth-flow.json"
+    },
+    "clientCredentials": {
+      "$ref": "openapi-oauth-flow.json"
+    },
+    "authorizationCode": {
+      "$ref": "openapi-oauth-flow.json"
+    }
+  },
+  "patternProperties": {
+    "^x-": {}
+  },
+  "additionalProperties": false
+}

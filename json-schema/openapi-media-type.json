@@ -1,0 +1,33 @@
+{
+  "$id": "openapi-media-type.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "OpenAPI Media Type Object",
+  "description": "Each Media Type Object provides schema and examples for the media type identified by its key.",
+  "type": "object",
+  "properties": {
+    "schema": {
+      "description": "The schema defining the content of the request, response, or parameter."
+    },
+    "example": {
+      "description": "Example of the media type in the specified format."
+    },
+    "examples": {
+      "type": "object",
+      "description": "Examples of the media type.",
+      "additionalProperties": {
+        "$ref": "openapi-example.json"
+      }
+    },
+    "encoding": {
+      "type": "object",
+      "description": "A map between a property name and its encoding information.",
+      "additionalProperties": {
+        "$ref": "openapi-encoding.json"
+      }
+    }
+  },
+  "patternProperties": {
+    "^x-": {}
+  },
+  "additionalProperties": false
+}

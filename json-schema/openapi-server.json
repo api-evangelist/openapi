@@ -1,0 +1,31 @@
+{
+  "$id": "openapi-server.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "OpenAPI Server Object",
+  "description": "An object representing a Server, providing connectivity information to a target server.",
+  "type": "object",
+  "required": [
+    "url"
+  ],
+  "properties": {
+    "url": {
+      "type": "string",
+      "description": "A URL to the target host. Supports server variables with {variable} templating."
+    },
+    "description": {
+      "type": "string",
+      "description": "An optional string describing the host designated by the URL."
+    },
+    "variables": {
+      "type": "object",
+      "description": "A map between a variable name and its value for URL template substitution.",
+      "additionalProperties": {
+        "$ref": "openapi-server-variable.json"
+      }
+    }
+  },
+  "patternProperties": {
+    "^x-": {}
+  },
+  "additionalProperties": false
+}

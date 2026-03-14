@@ -1,0 +1,76 @@
+{
+  "$id": "openapi-document.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "OpenAPI Document",
+  "description": "Schema describing the top-level structure of an OpenAPI 3.1.0 document, the industry standard for defining RESTful APIs.",
+  "type": "object",
+  "required": [
+    "openapi",
+    "info"
+  ],
+  "properties": {
+    "openapi": {
+      "type": "string",
+      "description": "The OpenAPI Specification version. Must be a supported version string.",
+      "pattern": "^3\\.1\\.\\d+$",
+      "examples": [
+        "3.1.0"
+      ]
+    },
+    "info": {
+      "$ref": "openapi-info.json"
+    },
+    "jsonSchemaDialect": {
+      "type": "string",
+      "format": "uri",
+      "description": "The default JSON Schema dialect for Schema Objects in this document.",
+      "default": "https://spec.openapis.org/oas/3.1/dialect/base"
+    },
+    "servers": {
+      "type": "array",
+      "description": "An array of Server Objects providing connectivity information to target servers.",
+      "items": {
+        "$ref": "openapi-server.json"
+      },
+      "default": [
+        {
+          "url": "/"
+        }
+      ]
+    },
+    "paths": {
+      "$ref": "openapi-paths.json"
+    },
+    "webhooks": {
+      "type": "object",
+      "description": "Incoming webhooks that may be received by the API provider.",
+      "additionalProperties": {
+        "$ref": "openapi-path-item.json"
+      }
+    },
+    "components": {
+      "$ref": "openapi-components.json"
+    },
+    "security": {
+      "type": "array",
+      "description": "A declaration of which security mechanisms can be used across the API.",
+      "items": {
+        "$ref": "openapi-security-requirement.json"
+      }
+    },
+    "tags": {
+      "type": "array",
+      "description": "A list of tags used by the document with additional metadata.",
+      "items": {
+        "$ref": "openapi-tag.json"
+      }
+    },
+    "externalDocs": {
+      "$ref": "openapi-external-documentation.json"
+    }
+  },
+  "patternProperties": {
+    "^x-": {}
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,29 @@
+{
+  "$id": "openapi-example.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "OpenAPI Example Object",
+  "description": "An object representing an example of a schema or parameter.",
+  "type": "object",
+  "properties": {
+    "summary": {
+      "type": "string",
+      "description": "Short description for the example."
+    },
+    "description": {
+      "type": "string",
+      "description": "Long description for the example."
+    },
+    "value": {
+      "description": "Embedded literal example."
+    },
+    "externalValue": {
+      "type": "string",
+      "format": "uri",
+      "description": "A URI that points to the literal example."
+    }
+  },
+  "patternProperties": {
+    "^x-": {}
+  },
+  "additionalProperties": false
+}

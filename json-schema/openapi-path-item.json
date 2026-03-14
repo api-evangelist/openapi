@@ -1,0 +1,63 @@
+{
+  "$id": "openapi-path-item.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "OpenAPI Path Item Object",
+  "description": "Describes the operations available on a single path. A Path Item may be empty due to ACL constraints.",
+  "type": "object",
+  "properties": {
+    "$ref": {
+      "type": "string",
+      "description": "Allows for a referenced definition of this path item."
+    },
+    "summary": {
+      "type": "string",
+      "description": "An optional string summary intended to apply to all operations in this path."
+    },
+    "description": {
+      "type": "string",
+      "description": "An optional string description intended to apply to all operations in this path."
+    },
+    "get": {
+      "$ref": "openapi-operation.json"
+    },
+    "put": {
+      "$ref": "openapi-operation.json"
+    },
+    "post": {
+      "$ref": "openapi-operation.json"
+    },
+    "delete": {
+      "$ref": "openapi-operation.json"
+    },
+    "options": {
+      "$ref": "openapi-operation.json"
+    },
+    "head": {
+      "$ref": "openapi-operation.json"
+    },
+    "patch": {
+      "$ref": "openapi-operation.json"
+    },
+    "trace": {
+      "$ref": "openapi-operation.json"
+    },
+    "servers": {
+      "type": "array",
+      "description": "Alternative servers to service all operations in this path.",
+      "items": {
+        "$ref": "openapi-server.json"
+      }
+    },
+    "parameters": {
+      "type": "array",
+      "description": "A list of parameters applicable for all operations described under this path.",
+      "items": {
+        "$ref": "openapi-parameter.json"
+      }
+    }
+  },
+  "patternProperties": {
+    "^x-": {}
+  },
+  "additionalProperties": false
+}

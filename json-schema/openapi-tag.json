@@ -1,0 +1,27 @@
+{
+  "$id": "openapi-tag.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "OpenAPI Tag Object",
+  "description": "Adds metadata to a single tag that is used by the Operation Object.",
+  "type": "object",
+  "required": [
+    "name"
+  ],
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "The name of the tag."
+    },
+    "description": {
+      "type": "string",
+      "description": "A description for the tag."
+    },
+    "externalDocs": {
+      "$ref": "openapi-external-documentation.json"
+    }
+  },
+  "patternProperties": {
+    "^x-": {}
+  },
+  "additionalProperties": false
+}

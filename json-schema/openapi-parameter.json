@@ -1,0 +1,84 @@
+{
+  "$id": "openapi-parameter.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "OpenAPI Parameter Object",
+  "description": "Describes a single operation parameter. A unique parameter is defined by a combination of a name and location.",
+  "type": "object",
+  "required": [
+    "name",
+    "in"
+  ],
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "The name of the parameter."
+    },
+    "in": {
+      "type": "string",
+      "description": "The location of the parameter.",
+      "enum": [
+        "query",
+        "header",
+        "path",
+        "cookie"
+      ]
+    },
+    "description": {
+      "type": "string",
+      "description": "A brief description of the parameter."
+    },
+    "required": {
+      "type": "boolean",
+      "description": "Whether this parameter is mandatory.",
+      "default": false
+    },
+    "deprecated": {
+      "type": "boolean",
+      "description": "Whether the parameter is deprecated.",
+      "default": false
+    },
+    "allowEmptyValue": {
+      "type": "boolean",
+      "description": "Whether empty-valued parameters are allowed.",
+      "default": false
+    },
+    "style": {
+      "type": "string",
+      "description": "How the parameter value will be serialized."
+    },
+    "explode": {
+      "type": "boolean",
+      "description": "Whether parameter values of type array or object generate separate parameters."
+    },
+    "allowReserved": {
+      "type": "boolean",
+      "description": "Whether the parameter value allows reserved characters.",
+      "default": false
+    },
+    "schema": {
+      "description": "The schema defining the type used for the parameter."
+    },
+    "example": {
+      "description": "Example of the parameter value."
+    },
+    "examples": {
+      "type": "object",
+      "description": "Examples of the parameter value.",
+      "additionalProperties": {
+        "$ref": "openapi-example.json"
+      }
+    },
+    "content": {
+      "type": "object",
+      "description": "A map containing the representations for the parameter.",
+      "maxProperties": 1,
+      "additionalProperties": {
+        "$ref": "openapi-media-type.json"
+      }
+    }
+  },
+  "patternProperties": {
+    "^x-": {}
+  },
+  "additionalProperties": false
+}

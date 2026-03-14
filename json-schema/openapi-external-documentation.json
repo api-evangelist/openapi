@@ -1,0 +1,25 @@
+{
+  "$id": "openapi-external-documentation.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "OpenAPI External Documentation Object",
+  "description": "Allows referencing an external resource for extended documentation.",
+  "type": "object",
+  "required": [
+    "url"
+  ],
+  "properties": {
+    "description": {
+      "type": "string",
+      "description": "A description of the target documentation."
+    },
+    "url": {
+      "type": "string",
+      "format": "uri",
+      "description": "The URL for the target documentation."
+    }
+  },
+  "patternProperties": {
+    "^x-": {}
+  },
+  "additionalProperties": false
+}

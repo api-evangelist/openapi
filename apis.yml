@@ -11,5 +11,34 @@ tags:
 - Documentation
 created: '2025'
 modified: '2025'
-apis: []
-common: []
+apis:
+- name: OpenAPI Specification
+  description: The OpenAPI Specification (OAS) defines a standard, programming language-agnostic
+    interface description for HTTP APIs. Version 3.1.0 aligns with JSON Schema draft
+    2020-12, enabling full JSON Schema support for describing request and response
+    bodies.
+  humanURL: https://spec.openapis.org/oas/latest.html
+  baseURL: https://spec.openapis.org/oas/3.1
+  properties:
+  - type: Documentation
+    url: https://spec.openapis.org/oas/v3.1.0
+  - type: GitHubRepository
+    url: https://github.com/OAI/OpenAPI-Specification
+  - type: JsonSchema
+    url: json-schema/openapi-document.json
+  - type: JsonLdContext
+    url: json-ld/openapi-context.jsonld
+  tags:
+  - OpenAPI
+  - REST
+  - API Description
+  - JSON Schema
+common:
+- type: Website
+  url: https://www.openapis.org/
+- type: GitHub
+  url: https://github.com/OAI
+- type: Blog
+  url: https://www.openapis.org/blog
+- type: Specification
+  url: https://spec.openapis.org/oas/latest.html

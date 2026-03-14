@@ -1,0 +1,19 @@
+{
+  "$id": "openapi-responses.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "OpenAPI Responses Object",
+  "description": "A container for the expected responses of an operation. Maps HTTP response codes to the expected response.",
+  "type": "object",
+  "properties": {
+    "default": {
+      "$ref": "openapi-response.json"
+    }
+  },
+  "patternProperties": {
+    "^[1-5](?:\\d{2}|XX)$": {
+      "$ref": "openapi-response.json"
+    },
+    "^x-": {}
+  },
+  "additionalProperties": false
+}

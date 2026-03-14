@@ -1,0 +1,32 @@
+{
+  "$id": "openapi-server-variable.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "OpenAPI Server Variable Object",
+  "description": "An object representing a Server Variable for server URL template substitution.",
+  "type": "object",
+  "required": [
+    "default"
+  ],
+  "properties": {
+    "enum": {
+      "type": "array",
+      "description": "An enumeration of string values for limited variable substitution options.",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    },
+    "default": {
+      "type": "string",
+      "description": "The default value to use for substitution."
+    },
+    "description": {
+      "type": "string",
+      "description": "An optional description for the server variable."
+    }
+  },
+  "patternProperties": {
+    "^x-": {}
+  },
+  "additionalProperties": false
+}

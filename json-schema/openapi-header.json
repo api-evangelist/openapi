@@ -1,0 +1,55 @@
+{
+  "$id": "openapi-header.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "OpenAPI Header Object",
+  "description": "Describes a single header parameter, following the structure of the Parameter Object but with fixed name and location.",
+  "type": "object",
+  "properties": {
+    "description": {
+      "type": "string",
+      "description": "A brief description of the header."
+    },
+    "required": {
+      "type": "boolean",
+      "default": false
+    },
+    "deprecated": {
+      "type": "boolean",
+      "default": false
+    },
+    "allowEmptyValue": {
+      "type": "boolean",
+      "default": false
+    },
+    "style": {
+      "type": "string",
+      "default": "simple"
+    },
+    "explode": {
+      "type": "boolean"
+    },
+    "schema": {
+      "description": "The schema defining the type used for the header."
+    },
+    "example": {
+      "description": "Example of the header value."
+    },
+    "examples": {
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "openapi-example.json"
+      }
+    },
+    "content": {
+      "type": "object",
+      "maxProperties": 1,
+      "additionalProperties": {
+        "$ref": "openapi-media-type.json"
+      }
+    }
+  },
+  "patternProperties": {
+    "^x-": {}
+  },
+  "additionalProperties": false
+}

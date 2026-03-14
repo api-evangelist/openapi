@@ -1,0 +1,81 @@
+{
+  "$id": "openapi-components.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "OpenAPI Components Object",
+  "description": "Holds a set of reusable objects for different aspects of the OAS. All objects defined within the Components Object have no effect on the API unless they are explicitly referenced from outside the Components Object.",
+  "type": "object",
+  "properties": {
+    "schemas": {
+      "type": "object",
+      "description": "An object to hold reusable Schema Objects.",
+      "additionalProperties": {}
+    },
+    "responses": {
+      "type": "object",
+      "description": "An object to hold reusable Response Objects.",
+      "additionalProperties": {
+        "$ref": "openapi-response.json"
+      }
+    },
+    "parameters": {
+      "type": "object",
+      "description": "An object to hold reusable Parameter Objects.",
+      "additionalProperties": {
+        "$ref": "openapi-parameter.json"
+      }
+    },
+    "examples": {
+      "type": "object",
+      "description": "An object to hold reusable Example Objects.",
+      "additionalProperties": {
+        "$ref": "openapi-example.json"
+      }
+    },
+    "requestBodies": {
+      "type": "object",
+      "description": "An object to hold reusable Request Body Objects.",
+      "additionalProperties": {
+        "$ref": "openapi-request-body.json"
+      }
+    },
+    "headers": {
+      "type": "object",
+      "description": "An object to hold reusable Header Objects.",
+      "additionalProperties": {
+        "$ref": "openapi-header.json"
+      }
+    },
+    "securitySchemes": {
+      "type": "object",
+      "description": "An object to hold reusable Security Scheme Objects.",
+      "additionalProperties": {
+        "$ref": "openapi-security-scheme.json"
+      }
+    },
+    "links": {
+      "type": "object",
+      "description": "An object to hold reusable Link Objects.",
+      "additionalProperties": {
+        "$ref": "openapi-link.json"
+      }
+    },
+    "callbacks": {
+      "type": "object",
+      "description": "An object to hold reusable Callback Objects.",
+      "additionalProperties": {
+        "$ref": "openapi-path-item.json"
+      }
+    },
+    "pathItems": {
+      "type": "object",
+      "description": "An object to hold reusable Path Item Objects.",
+      "additionalProperties": {
+        "$ref": "openapi-path-item.json"
+      }
+    }
+  },
+  "patternProperties": {
+    "^x-": {}
+  },
+  "additionalProperties": false
+}

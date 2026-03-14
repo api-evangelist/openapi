@@ -1,0 +1,37 @@
+{
+  "$id": "openapi-encoding.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "OpenAPI Encoding Object",
+  "description": "A single encoding definition applied to a single schema property.",
+  "type": "object",
+  "properties": {
+    "contentType": {
+      "type": "string",
+      "description": "The Content-Type for encoding a specific property."
+    },
+    "headers": {
+      "type": "object",
+      "description": "A map allowing additional information to be provided as headers.",
+      "additionalProperties": {
+        "$ref": "openapi-header.json"
+      }
+    },
+    "style": {
+      "type": "string",
+      "description": "Describes how a specific property value will be serialized."
+    },
+    "explode": {
+      "type": "boolean",
+      "description": "Whether parameter values of type array or object generate separate parameters."
+    },
+    "allowReserved": {
+      "type": "boolean",
+      "description": "Whether the parameter value allows reserved characters.",
+      "default": false
+    }
+  },
+  "patternProperties": {
+    "^x-": {}
+  },
+  "additionalProperties": false
+}

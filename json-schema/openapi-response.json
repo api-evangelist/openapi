@@ -1,0 +1,41 @@
+{
+  "$id": "openapi-response.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "OpenAPI Response Object",
+  "description": "Describes a single response from an API Operation, including design-time, static links to operations based on the response.",
+  "type": "object",
+  "required": [
+    "description"
+  ],
+  "properties": {
+    "description": {
+      "type": "string",
+      "description": "A description of the response."
+    },
+    "headers": {
+      "type": "object",
+      "description": "Maps a header name to its definition.",
+      "additionalProperties": {
+        "$ref": "openapi-header.json"
+      }
+    },
+    "content": {
+      "type": "object",
+      "description": "A map containing the representations for the response.",
+      "additionalProperties": {
+        "$ref": "openapi-media-type.json"
+      }
+    },
+    "links": {
+      "type": "object",
+      "description": "A map of operations links that can be followed from the response.",
+      "additionalProperties": {
+        "$ref": "openapi-link.json"
+      }
+    }
+  },
+  "patternProperties": {
+    "^x-": {}
+  },
+  "additionalProperties": false
+}

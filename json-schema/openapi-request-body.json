@@ -1,0 +1,32 @@
+{
+  "$id": "openapi-request-body.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "OpenAPI Request Body Object",
+  "description": "Describes a single request body.",
+  "type": "object",
+  "required": [
+    "content"
+  ],
+  "properties": {
+    "description": {
+      "type": "string",
+      "description": "A brief description of the request body."
+    },
+    "content": {
+      "type": "object",
+      "description": "The content of the request body, mapped by media type.",
+      "additionalProperties": {
+        "$ref": "openapi-media-type.json"
+      }
+    },
+    "required": {
+      "type": "boolean",
+      "description": "Whether the request body is required in the request.",
+      "default": false
+    }
+  },
+  "patternProperties": {
+    "^x-": {}
+  },
+  "additionalProperties": false
+}

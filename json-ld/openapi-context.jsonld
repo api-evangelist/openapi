@@ -1,0 +1,217 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "oas": "https://spec.openapis.org/oas/3.1/vocab#",
+    "schema": "https://schema.org/",
+    "hydra": "http://www.w3.org/ns/hydra/core#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "vann": "http://purl.org/vocab/vann/",
+
+    "OpenAPIDocument": {
+      "@id": "oas:OpenAPIDocument",
+      "@type": "@id"
+    },
+    "openapi": {
+      "@id": "oas:specificationVersion",
+      "@type": "xsd:string"
+    },
+    "info": {
+      "@id": "oas:info",
+      "@type": "@id"
+    },
+    "InfoObject": {
+      "@id": "oas:InfoObject",
+      "@type": "@id"
+    },
+    "title": {
+      "@id": "schema:name",
+      "@type": "xsd:string"
+    },
+    "summary": {
+      "@id": "schema:abstract",
+      "@type": "xsd:string"
+    },
+    "description": {
+      "@id": "schema:description",
+      "@type": "xsd:string"
+    },
+    "termsOfService": {
+      "@id": "schema:termsOfService",
+      "@type": "@id"
+    },
+    "contact": {
+      "@id": "schema:contactPoint",
+      "@type": "@id"
+    },
+    "ContactObject": {
+      "@id": "schema:ContactPoint",
+      "@type": "@id"
+    },
+    "name": {
+      "@id": "schema:name",
+      "@type": "xsd:string"
+    },
+    "url": {
+      "@id": "schema:url",
+      "@type": "@id"
+    },
+    "email": {
+      "@id": "schema:email",
+      "@type": "xsd:string"
+    },
+    "license": {
+      "@id": "schema:license",
+      "@type": "@id"
+    },
+    "LicenseObject": {
+      "@id": "schema:CreativeWork",
+      "@type": "@id"
+    },
+    "version": {
+      "@id": "schema:version",
+      "@type": "xsd:string"
+    },
+    "ServerObject": {
+      "@id": "oas:ServerObject",
+      "@type": "@id"
+    },
+    "servers": {
+      "@id": "oas:servers",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "variables": {
+      "@id": "oas:serverVariables",
+      "@type": "@id"
+    },
+    "paths": {
+      "@id": "oas:paths",
+      "@type": "@id"
+    },
+    "PathItemObject": {
+      "@id": "hydra:Class",
+      "@type": "@id"
+    },
+    "OperationObject": {
+      "@id": "hydra:Operation",
+      "@type": "@id"
+    },
+    "get": {
+      "@id": "hydra:method",
+      "@type": "@id"
+    },
+    "put": {
+      "@id": "hydra:method",
+      "@type": "@id"
+    },
+    "post": {
+      "@id": "hydra:method",
+      "@type": "@id"
+    },
+    "delete": {
+      "@id": "hydra:method",
+      "@type": "@id"
+    },
+    "patch": {
+      "@id": "hydra:method",
+      "@type": "@id"
+    },
+    "operationId": {
+      "@id": "schema:identifier",
+      "@type": "xsd:string"
+    },
+    "parameters": {
+      "@id": "hydra:expects",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "ParameterObject": {
+      "@id": "oas:ParameterObject",
+      "@type": "@id"
+    },
+    "requestBody": {
+      "@id": "hydra:expects",
+      "@type": "@id"
+    },
+    "responses": {
+      "@id": "hydra:returns",
+      "@type": "@id"
+    },
+    "ResponseObject": {
+      "@id": "oas:ResponseObject",
+      "@type": "@id"
+    },
+    "tags": {
+      "@id": "schema:keywords",
+      "@type": "xsd:string",
+      "@container": "@set"
+    },
+    "TagObject": {
+      "@id": "oas:TagObject",
+      "@type": "@id"
+    },
+    "externalDocs": {
+      "@id": "rdfs:seeAlso",
+      "@type": "@id"
+    },
+    "deprecated": {
+      "@id": "oas:deprecated",
+      "@type": "xsd:boolean"
+    },
+    "security": {
+      "@id": "oas:security",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "SecuritySchemeObject": {
+      "@id": "oas:SecuritySchemeObject",
+      "@type": "@id"
+    },
+    "components": {
+      "@id": "oas:components",
+      "@type": "@id"
+    },
+    "ComponentsObject": {
+      "@id": "oas:ComponentsObject",
+      "@type": "@id"
+    },
+    "webhooks": {
+      "@id": "oas:webhooks",
+      "@type": "@id"
+    },
+    "schema_def": {
+      "@id": "oas:schema",
+      "@type": "@id"
+    },
+    "content": {
+      "@id": "oas:content",
+      "@type": "@id"
+    },
+    "MediaTypeObject": {
+      "@id": "schema:MediaObject",
+      "@type": "@id"
+    },
+    "example": {
+      "@id": "schema:workExample",
+      "@type": "@id"
+    },
+    "examples": {
+      "@id": "schema:workExample",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "encoding": {
+      "@id": "schema:encodingFormat",
+      "@type": "@id"
+    },
+    "LinkObject": {
+      "@id": "hydra:Link",
+      "@type": "@id"
+    },
+    "callbacks": {
+      "@id": "oas:callbacks",
+      "@type": "@id"
+    }
+  }
+}

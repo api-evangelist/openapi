@@ -1,0 +1,74 @@
+{
+  "$id": "openapi-operation.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "OpenAPI Operation Object",
+  "description": "Describes a single API operation on a path.",
+  "type": "object",
+  "properties": {
+    "tags": {
+      "type": "array",
+      "description": "A list of tags for API documentation control.",
+      "items": {
+        "type": "string"
+      }
+    },
+    "summary": {
+      "type": "string",
+      "description": "A short summary of what the operation does."
+    },
+    "description": {
+      "type": "string",
+      "description": "A verbose explanation of the operation behavior."
+    },
+    "externalDocs": {
+      "$ref": "openapi-external-documentation.json"
+    },
+    "operationId": {
+      "type": "string",
+      "description": "Unique string used to identify the operation."
+    },
+    "parameters": {
+      "type": "array",
+      "description": "A list of parameters applicable for this operation.",
+      "items": {
+        "$ref": "openapi-parameter.json"
+      }
+    },
+    "requestBody": {
+      "$ref": "openapi-request-body.json"
+    },
+    "responses": {
+      "$ref": "openapi-responses.json"
+    },
+    "callbacks": {
+      "type": "object",
+      "description": "A map of possible out-of-band callbacks related to the operation.",
+      "additionalProperties": {
+        "$ref": "openapi-path-item.json"
+      }
+    },
+    "deprecated": {
+      "type": "boolean",
+      "description": "Declares this operation to be deprecated.",
+      "default": false
+    },
+    "security": {
+      "type": "array",
+      "description": "Security mechanisms applicable for this operation.",
+      "items": {
+        "$ref": "openapi-security-requirement.json"
+      }
+    },
+    "servers": {
+      "type": "array",
+      "description": "Alternative servers to service this operation.",
+      "items": {
+        "$ref": "openapi-server.json"
+      }
+    }
+  },
+  "patternProperties": {
+    "^x-": {}
+  },
+  "additionalProperties": false
+}

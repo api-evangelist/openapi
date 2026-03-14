@@ -1,0 +1,13 @@
+{
+  "$id": "openapi-security-requirement.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "OpenAPI Security Requirement Object",
+  "description": "Lists the required security schemes to execute an operation. Each name must correspond to a security scheme declared in the Security Schemes under the Components Object.",
+  "type": "object",
+  "additionalProperties": {
+    "type": "array",
+    "items": {
+      "type": "string"
+    }
+  }
+}
