@@ -1,0 +1,15 @@
+name: OpenAPI
+description: OpenAPI (formerly Swagger Specification) is a standard, language-agnostic
+  specification for describing RESTful APIs in a machine-readable format. It enables
+  automated documentation generation, client code generation, and API testing, serving
+  as a contract between API providers and consumers.
+url: https://www.openapis.org/
+tags:
+- API
+- Specification
+- REST
+- Documentation
+created: '2025'
+modified: '2025'
+apis: []
+common: []
