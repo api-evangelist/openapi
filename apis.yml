@@ -1,44 +1,46 @@
+aid: openapi
 name: OpenAPI
-description: OpenAPI (formerly Swagger Specification) is a standard, language-agnostic
-  specification for describing RESTful APIs in a machine-readable format. It enables
-  automated documentation generation, client code generation, and API testing, serving
-  as a contract between API providers and consumers.
-url: https://www.openapis.org/
+description: >-
+  OpenAPI (formerly Swagger Specification) is a standard, language-agnostic
+  specification for describing RESTful APIs in a machine-readable format. It
+  enables automated documentation generation, client code generation, and API
+  testing, serving as a contract between API providers and consumers.
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
-- API
-- Specification
-- REST
-- Documentation
-created: '2025'
-modified: '2025'
-apis:
-- name: OpenAPI Specification
-  description: The OpenAPI Specification (OAS) defines a standard, programming language-agnostic
-    interface description for HTTP APIs. Version 3.1.0 aligns with JSON Schema draft
-    2020-12, enabling full JSON Schema support for describing request and response
-    bodies.
-  humanURL: https://spec.openapis.org/oas/latest.html
-  baseURL: https://spec.openapis.org/oas/3.1
-  properties:
-  - type: Documentation
-    url: https://spec.openapis.org/oas/v3.1.0
-  - type: GitHubRepository
-    url: https://github.com/OAI/OpenAPI-Specification
-  - type: JsonSchema
-    url: json-schema/openapi-document.json
-  - type: JsonLdContext
-    url: json-ld/openapi-context.jsonld
-  tags:
-  - OpenAPI
+  - API
+  - Specification
   - REST
-  - API Description
-  - JSON Schema
+  - Documentation
+url: https://raw.githubusercontent.com/api-evangelist/openapi/refs/heads/main/apis.yml
+created: '2025-01-01'
+modified: '2026-03-16'
+specificationVersion: '0.19'
+apis:
+  - aid: openapi:openapi-specification
+    name: OpenAPI Specification
+    description: >-
+      The OpenAPI Specification (OAS) defines a standard, programming
+      language-agnostic interface description for HTTP APIs.
+    humanURL: https://spec.openapis.org/oas/latest.html
+    tags:
+      - OpenAPI
+      - REST
+      - API Description
+    properties:
+      - type: Documentation
+        url: https://spec.openapis.org/oas/v3.1.0
+      - type: Reference
+        url: https://github.com/OAI/OpenAPI-Specification
 common:
-- type: Website
-  url: https://www.openapis.org/
-- type: GitHub
-  url: https://github.com/OAI
-- type: Blog
-  url: https://www.openapis.org/blog
-- type: Specification
-  url: https://spec.openapis.org/oas/latest.html
+  - type: Website
+    url: https://www.openapis.org/
+  - type: Documentation
+    url: https://spec.openapis.org/oas/latest.html
+  - type: GitHub Organization
+    url: https://github.com/OAI
+  - type: Blog
+    url: https://www.openapis.org/blog
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
