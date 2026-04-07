@@ -8,10 +8,9 @@ description: >-
 type: Index
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
-  - API
-  - Specification
-  - REST
   - Documentation
+  - REST
+  - Specification
 url: https://raw.githubusercontent.com/api-evangelist/openapi/refs/heads/main/apis.yml
 created: '2025-01-01'
 modified: '2026-03-16'
@@ -24,9 +23,9 @@ apis:
       language-agnostic interface description for HTTP APIs.
     humanURL: https://spec.openapis.org/oas/latest.html
     tags:
+      - API Description
       - OpenAPI
       - REST
-      - API Description
     properties:
       - type: Documentation
         url: https://spec.openapis.org/oas/v3.1.0
