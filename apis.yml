@@ -36,7 +36,7 @@ common:
     url: https://www.openapis.org/
   - type: Documentation
     url: https://spec.openapis.org/oas/latest.html
-  - type: GitHub Organization
+  - type: GitHubOrganization
     url: https://github.com/OAI
   - type: Blog
     url: https://www.openapis.org/blog
