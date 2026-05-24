@@ -40,6 +40,8 @@ common:
     url: https://github.com/OAI
   - type: Blog
     url: https://www.openapis.org/blog
+  - type: LLMsTxt
+    url: https://www.openapis.org/llms.txt
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
