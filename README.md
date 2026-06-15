@@ -1,34 +1,37 @@
 # OpenAPI (openapi)
+
 OpenAPI (formerly Swagger Specification) is a standard, language-agnostic specification for describing RESTful APIs in a machine-readable format. It enables automated documentation generation, client code generation, and API testing, serving as a contract between API providers and consumers.
 
-**URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/openapi/refs/heads/main/apis.yml)
+**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/openapi/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/openapi/refs/heads/main/apis.yml)
 
 ## Scope
 
-- **Type:** Index 
-- **Position:** Consuming 
-- **Access:** 3rd-Party 
+- **Type:** Index
 
-## Tags:
+## Tags
 
- - API, Specification, REST, Documentation
+- Documentation
+- REST
+- Specification
 
 ## Timestamps
 
-- **Created:** 2025-01-01 
-- **Modified:** 2026-04-28 
+- **Created:** 2025-01-01
+- **Modified:** 2026-04-28
 
 ## APIs
 
 ### OpenAPI Specification
+
 The OpenAPI Specification (OAS) defines a standard, programming language-agnostic interface description for HTTP APIs.
 
-**Human URL:** [https://spec.openapis.org/oas/latest.html](https://spec.openapis.org/oas/latest.html)
+- **Human URL:** [https://spec.openapis.org/oas/latest.html](https://spec.openapis.org/oas/latest.html)
 
+#### Tags
 
-#### Tags:
-
- - OpenAPI, REST, API Description
+- API Description
+- OpenAPI
+- REST
 
 #### Properties
 
@@ -41,9 +44,9 @@ The OpenAPI Specification (OAS) defines a standard, programming language-agnosti
 - [Documentation](https://spec.openapis.org/oas/latest.html)
 - [GitHub Organization](https://github.com/OAI)
 - [Blog](https://www.openapis.org/blog)
+- [L L Ms Txt](https://www.openapis.org/llms.txt)
 
 ## Maintainers
 
 **FN:** Kin Lane
-
 **Email:** kin@apievangelist.com
