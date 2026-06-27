@@ -40,7 +40,7 @@ common:
     url: https://github.com/OAI
   - type: Blog
     url: https://www.openapis.org/blog
-  - type: LLMsTxt
+  - type: LlmsText
     url: https://www.openapis.org/llms.txt
 maintainers:
   - FN: Kin Lane
