@@ -32,6 +32,8 @@ apis:
       - type: Reference
         url: https://github.com/OAI/OpenAPI-Specification
 common:
+  - type: DomainSecurity
+    url: security/openapi-domain-security.yml
   - type: Website
     url: https://www.openapis.org/
   - type: Documentation
