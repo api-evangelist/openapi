@@ -1,0 +1,47 @@
+# OpenAPI Initiative
+> The OpenAPI Initiative provides an open source, technical community, within which industry participants may easily contribute to building a vendor-neutral, portable and an open specification for providing technical metadata for REST APIs – the “OpenAPI Specification” (OAS).
+
+## Posts
+- [New Outreach Co-Chairs Announced](https://www.openapis.org/blog/2026/07/22/new-outreach-co-chairs-announced): The OpenAPI Initiative is pleased to announce the appointment of two new co-Chairs of the Outreach Committee. Chris Wood and
+- [OpenAPI Initiative Newsletter – June 2026](https://www.openapis.org/blog/2026/06/09/openapi-initiative-newsletter-june-2026): Welcome to the OpenAPI Initiative (OAI) June 2026 newsletter! We are excited to bring all the latest specification, events, and
+- [OpenAPI Initiative Newsletter – February 2026](https://www.openapis.org/blog/2026/02/10/openapi-initiative-newsletter-february-2026): Welcome to the OpenAPI Initiative (OAI) February 2026 newsletter! This is our first newsletter of 2026, and there is already
+- [Announcing Arazzo Specification 1.1](https://www.openapis.org/blog/2026/05/19/announcing-arazzo-specification-1-1): We are proud to announce the release of Arazzo Specification v1.1.0! The headline addition is AsyncAPI support — for the
+- [OpenAPI Community Hero – Vincent Biret](https://www.openapis.org/blog/2026/03/05/openapi-community-hero-vincent-biret): Welcome to our next Community Hero! After his recent efforts in contributing to Overlay v1.1.0, we spoke to Vincent Biret.
+
+## Pages
+- [Arazzo Specification](https://www.openapis.org/arazzo-specification): The Future of API-Driven Workflows: The Arazzo Specification The Arazzo Specification is a community-driven open specification within the OpenAPI Initiative,
+- [Calendar](https://www.openapis.org/get-involved/about): Welcome to the OpenAPI Initiative community calendar. This is a public listing of all technical and Special Interest Groups meetings,
+- [Membership benefits](https://www.openapis.org/membership-benefits): Be part of the community building the API standards you depend on Join 34 member organizations from startups to Fortune
+- [Home](https://www.openapis.org/): Want to learn more about OpenAPI? Take our new OpenAPI Fundamentals training course  LEARN MORE &gt; The OpenAPI Specifications provide
+- [Become a Member](https://www.openapis.org/membershipjoin): As a Linux Foundation Collaborative Project, the OpenAPI Initiative aims to create an open source, technical community where industry participants
+
+## Venues
+- [Conrad Bengaluru](https://www.openapis.org/venue/conrad-bengaluru)
+- [Tolhuistuin](https://www.openapis.org/venue/tolhuistuin)
+- [Marina Bay Sands](https://www.openapis.org/venue/marina-bay-sands)
+- [San Jose Convention CenterSan Jose](https://www.openapis.org/venue/san-jose-convention-centersan-jose)
+- [Smartvillage](https://www.openapis.org/venue/smartvillage)
+
+## Organizers
+- [Finlandia House](https://www.openapis.org/organizer/finlandia-house)
+- [OAI Outreach Committee](https://www.openapis.org/organizer/oai-outreach-committee)
+
+## Events
+- [Apidays India 2026](https://www.openapis.org/events/apidays-india-2026): Apidays puts the intersection between APIs and AI front and center, especially in the world of AI Agents acting autonomously in accessing your APIs and bringing the agentic intention economy to life. In this world the role of OpenAPI has never been more important. Join us at the OAI Track at apidays India to find out from our presenters what this intersection looks like, and how OpenAPI is being used and evolving to support the agentic world.
+
+## Categories
+- [Blog](https://www.openapis.org/category/blog)
+- [Announcement](https://www.openapis.org/category/announcement)
+- [Events](https://www.openapis.org/category/events)
+- [News](https://www.openapis.org/category/news)
+- [Presentations](https://www.openapis.org/category/blog/presentation)
+
+## Tags
+- [new member](https://www.openapis.org/tag/new-member)
+- [openapi](https://www.openapis.org/tag/openapi)
+- [Arazzo](https://www.openapis.org/tag/arazzo)
+- [api](https://www.openapis.org/tag/api)
+- [APIStrat 2018](https://www.openapis.org/tag/apistrat-2018)
+
+## Optional
+- [Sitemap index](https://www.openapis.org/wp-sitemap.xml)
