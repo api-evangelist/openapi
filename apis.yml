@@ -55,6 +55,12 @@ apis:
       - type: Reference
         url: https://github.com/OAI/OpenAPI-Specification
 common:
+  - type: Plans
+    url: plans/openapi-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/openapi-rate-limits.yml
+  - type: FinOps
+    url: finops/openapi-finops.yml
   - type: DomainSecurity
     url: security/openapi-domain-security.yml
   - type: Website
