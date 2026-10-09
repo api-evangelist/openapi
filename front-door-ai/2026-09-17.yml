@@ -10,10 +10,14 @@ front_door_ai:
   ownership: unresolved
   owner: null
   shares_host_with:
+  - specification
   - technical-specifications
   inherited_from: null
+  alias_of: null
   verdict: silent
   score: null
+  band: null
+  band_label: null
   host_score: 0
   density: null
   words: 448
